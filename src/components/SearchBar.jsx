@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { IconButton, Paper } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 export const SearchBar = () => {
-  const [first, setFirst] = useState(false);
-
   return (
     <Paper
       component='form'

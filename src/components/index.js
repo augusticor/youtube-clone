@@ -6,3 +6,5 @@ export * from './VideoDetail';
 export * from './ChannelDetail';
 export * from './SideBar';
 export * from './Videos';
+export * from './VideoCard';
+export * from './ChannelCard';
