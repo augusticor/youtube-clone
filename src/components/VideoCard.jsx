@@ -12,9 +12,18 @@ export const VideoCard = ({
 }) => {
   //
   return (
-    <Card sx={{ width: { md: '360px', xs: '100%' }, boxShadow: 'none', borderRadius: 0 }}>
+    <Card
+      sx={{
+        width: { xs: '100%', sm: '358px', md: '320px' },
+        boxShadow: 'none',
+        borderRadius: 0,
+      }}
+    >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <CardMedia image={snippet?.thumbnails?.medium?.url} sx={{ width: 358, height: 180 }} />
+        <CardMedia
+          image={snippet?.thumbnails?.medium?.url}
+          sx={{ width: { xs: '100%', sm: '358px', md: '320px' }, height: 180 }}
+        />
 
         <CardContent sx={{ backgroundColor: '#1e1e1e', height: '90px' }}>
           <Typography variant='subtitle1' fontWeight='bold' color='#FFF'>
