@@ -19,8 +19,8 @@ export const Feed = () => {
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row ' } }}>
       <Box
         sx={{
-          height: { sx: 'auto', md: '92vh' },
-          borderRight: '1px solid #3d3d3d',
+          height: { sx: 'auto', md: '100vh' },
+          borderRight: '1px solid #2a0909',
           px: { sx: 0, md: 2 },
         }}
       >
@@ -28,13 +28,9 @@ export const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-
-        <Typography className='copyright' variant='body2' sx={{ mt: 1.5, color: '#fff' }}>
-          Thanks JSM Media
-        </Typography>
       </Box>
 
-      <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
+      <Box p={2} sx={{ overflowY: 'auto', height: '100vh', flex: 2 }}>
         <Typography variant='h4' fontWeight='bold' mb={2} sx={{ color: 'white' }}>
           {selectedCategory} <span style={{ color: '#F31503' }}>Videos</span>
         </Typography>
