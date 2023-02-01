@@ -6,7 +6,7 @@ export const Videos = ({ videos = [], direction = 'row' }) => {
     <Stack direction={direction} flexWrap='wrap' justifyContent='space-evenly' gap={2}>
       {videos.map((item, idx) => {
         return (
-          <Box key={idx}>
+          <Box key={idx} data-cy='element-card'>
             {item.id.videoId && <VideoCard video={item} />}
             {item.id.channelId && <ChannelCard channelDetail={item} />}
           </Box>

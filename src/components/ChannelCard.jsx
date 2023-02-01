@@ -28,6 +28,7 @@ export const ChannelCard = ({ channelDetail, marginTop }) => {
             color: '#FFF',
             alignItems: 'center',
           }}
+          data-cy='channel-card'
         >
           <CardMedia
             image={channelDetail?.snippet?.thumbnails?.medium?.url || demoProfilePicture}

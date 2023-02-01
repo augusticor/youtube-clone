@@ -27,6 +27,7 @@ export const SearchBar = () => {
         boxShadow: 'none',
         mr: { sm: 5 },
       }}
+      data-cy='search-bar'
     >
       <input
         className='search-bar'

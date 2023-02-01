@@ -9,9 +9,9 @@ export const NavBar = () => {
       direction='row'
       alignItems='center'
       justifyContent='space-between'
-      sx={{ position: 'sticky', background: '#000', top: 0, p: 1}}
+      sx={{ position: 'sticky', background: '#000', top: 0, p: 1 }}
     >
-      <Link to='/' style={{ display: 'flex', alignItems: 'center' }}>
+      <Link to='/' style={{ display: 'flex', alignItems: 'center' }} data-cy='home-link'>
         <img src={logo} alt='app logo' height={45} />
       </Link>
 

@@ -10,6 +10,7 @@ export const SideBar = ({ selectedCategory = 'New', setSelectedCategory }) => {
         height: { sx: 'auto', md: '100%' },
         flexDirection: { md: 'column' },
       }}
+      data-cy='categories'
     >
       {categories.map((category) => (
         <button
