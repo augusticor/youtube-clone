@@ -42,6 +42,7 @@ export const VideoDetail = () => {
               url={`https://www.youtube.com/watch?v=${videoId}`}
               className='react-player'
               controls
+              data-cy='react-player'
             />
 
             <Typography color='#FFF' variant='h5' fontWeight='bold' p={2}>
@@ -54,8 +55,9 @@ export const VideoDetail = () => {
               sx={{ color: '#FFF' }}
               py={1}
               px={2}
+              data-cy='video-info'
             >
-              <Link to={`/channel/${snippet.channelId}`}>
+              <Link to={`/channel/${snippet.channelId}`} data-cy='channel-link'>
                 <Typography sx={{ variant: { sm: 'subtitle1', md: 'h6' } }} color='#FFF'>
                   {snippet.channelTitle}
                   <CheckCircleOutlineIcon

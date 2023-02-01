@@ -34,9 +34,10 @@ export const SearchBar = () => {
         placeholder='Search a video ...'
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
+        data-cy='search-input'
       />
 
-      <IconButton type='submit' sx={{ p: '10px', color: 'red' }}>
+      <IconButton type='submit' sx={{ p: '10px', color: 'red' }} data-cy='search-button'>
         <SearchIcon />
       </IconButton>
     </Paper>

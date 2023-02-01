@@ -17,6 +17,7 @@ export const ChannelCard = ({ channelDetail, marginTop }) => {
         margin: 'auto',
         marginTop: marginTop,
       }}
+      data-cy='channel-card-cy'
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent
