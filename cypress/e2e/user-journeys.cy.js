@@ -138,11 +138,12 @@ describe('User journeys', () => {
     // Channel detail
     cy.wait('@datarequest');
     cy.location('pathname').should('match', /\/channel\/./);
+  });
 
-    // Return home and go to channel
-    cy.getByDataCy('home-link').click();
-    cy.wait('@datarequest').its('response.statusCode').should('eq', 200);
-    cy.location('pathname').should('eq', '/');
+  it('User can go to a channel detail from videocard on homepage', () => {
+    cy.intercept('GET', 'https://youtube-v31.p.rapidapi.com/*').as('datarequest');
+    cy.visit('http://localhost:3000');
+
     cy.getByDataCy('category-title').should('have.text', 'New Videos');
     cy.getByDataCy('channel-card-link').first().click();
 
