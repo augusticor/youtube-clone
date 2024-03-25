@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { ChannelDetail, Feed, NavBar, SearchFeed, VideoDetail } from './components';
@@ -9,11 +10,11 @@ function App() {
         <NavBar />
 
         <Routes>
-          <Route path='/' element={<Feed />} />
-          <Route path='/video/:id' element={<VideoDetail />} />
-          <Route path='/channel/:id' element={<ChannelDetail />} />
-          <Route path='/search/:searchTerm' element={<SearchFeed />} />
-          <Route path='*' element={<Navigate to='/' replace />} />
+          <Route path="/" element={<Feed />} />
+          <Route path="/video/:id" element={<VideoDetail />} />
+          <Route path="/channel/:id" element={<ChannelDetail />} />
+          <Route path="/search/:searchTerm" element={<SearchFeed />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Box>
     </BrowserRouter>

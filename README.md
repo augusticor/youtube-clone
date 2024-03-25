@@ -1,6 +1,6 @@
 # YouTube Clone with RapidAPI ▶
 
-This web application is a simple clone of [YouTube](https://www.youtube.com/) that uses [Youtube v31](https://rapidapi.com/ytdlfree/api/youtube-v31/) api from Rapid API. It has **end to end** tests using ***[Cypress Framework](https://www.cypress.io/)*** that can be run in local environment or on continuous integration using the official [Cypress GitHub Action](https://github.com/marketplace/actions/cypress-io).
+This web application is a simple clone of [YouTube](https://www.youtube.com/) that uses [Youtube v31](https://rapidapi.com/ytdlfree/api/youtube-v31/) api from Rapid API. It has **end to end** tests using **_[Cypress Framework](https://www.cypress.io/)_** that can be run in local environment or on continuous integration using the official [Cypress GitHub Action](https://github.com/marketplace/actions/cypress-io).
 
 Visit the **deployed** app at: **[YouTube Clone](https://youtubecloneappa.netlify.app/)**
 
@@ -23,12 +23,12 @@ Check other project dependencies and versions in the [package.json](package.json
 
 ### Development
 
-1. Clone the project ```git clone git@github.com:augusticor/youtube-clone.git```
-2. Install the project dependencies using ```npm install```
-3. Rename [.env.example](.env.example) file to ***.env.local***
+1. Clone the project `git clone git@github.com:augusticor/youtube-clone.git`
+2. Install the project dependencies using `npm install`
+3. Rename [.env.example](.env.example) file to **_.env.local_**
 4. Create a [Rapid API](https://rapidapi.com/hub) account to consume the api
 5. Subscribe to [Youtube v31](https://rapidapi.com/ytdlfree/api/youtube-v31/) api
-6. Copy and paste your *X-RapidAPI-Key* in the ***REACT_APP_RAPIDAPI_KEY*** environment variable located in the file from step 3
+6. Copy and paste your _X-RapidAPI-Key_ in the **_VITE_RAPIDAPI_KEY_** environment variable located in the file from step 3
 7. Start the project using [npm start](#npm-start)
 
 ### Testing
@@ -45,7 +45,7 @@ Just visit the **deployed** app at: **[YouTube Clone](https://youtubecloneappa.n
 
 ### `npm start`
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ### `npm cypress:open`
 

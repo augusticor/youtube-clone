@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { fetchFromAPI } from '../utils/fetchFromApi';
 import { Videos } from './Videos';
@@ -17,7 +17,13 @@ export const SearchFeed = () => {
 
   return (
     <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
-      <Typography variant='h4' fontWeight='bold' mb={2} sx={{ color: 'white' }} data-cy='search-string'>
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        mb={2}
+        sx={{ color: 'white' }}
+        data-cy="search-string"
+      >
         Search results for: <span style={{ color: '#F31503' }}>{searchTerm}</span>
       </Typography>
 

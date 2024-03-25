@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import { fetchFromAPI } from '../utils/fetchFromApi';
 import { SideBar } from './SideBar';
@@ -24,14 +24,17 @@ export const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-        <SideBar
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-        />
+        <SideBar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </Box>
 
       <Box p={2} sx={{ overflowY: 'auto', height: '100vh', flex: 2 }}>
-        <Typography variant='h4' fontWeight='bold' mb={2} sx={{ color: 'white' }} data-cy='category-title'>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          mb={2}
+          sx={{ color: 'white' }}
+          data-cy="category-title"
+        >
           {selectedCategory} <span style={{ color: '#F31503' }}>Videos</span>
         </Typography>
 

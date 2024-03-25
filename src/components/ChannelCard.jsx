@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { Link } from 'react-router-dom';
@@ -17,7 +18,7 @@ export const ChannelCard = ({ channelDetail, marginTop }) => {
         margin: 'auto',
         marginTop: marginTop,
       }}
-      data-cy='channel-card-cy'
+      data-cy="channel-card-cy"
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent
@@ -29,7 +30,7 @@ export const ChannelCard = ({ channelDetail, marginTop }) => {
             color: '#FFF',
             alignItems: 'center',
           }}
-          data-cy='channel-card'
+          data-cy="channel-card"
         >
           <CardMedia
             image={channelDetail?.snippet?.thumbnails?.medium?.url || demoProfilePicture}
@@ -42,15 +43,14 @@ export const ChannelCard = ({ channelDetail, marginTop }) => {
             }}
           />
 
-          <Typography variant='h6'>
+          <Typography variant="h6">
             {channelDetail?.snippet?.title}
             <CheckCircleOutlineIcon sx={{ fontSize: 20, color: 'gray', ml: '5px' }} />
           </Typography>
 
           {channelDetail?.statistics?.subscriberCount && (
             <Typography>
-              {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()}{' '}
-              Subscribers
+              {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers
             </Typography>
           )}
         </CardContent>

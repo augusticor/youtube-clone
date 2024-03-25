@@ -1,47 +1,38 @@
 {
   "name": "youtube-clone",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.6",
-    "axios": "^1.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-player": "^2.11.0",
-    "react-router-dom": "^6.7.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "start": "vite",
+    "build": "CI=false && vite build",
+    "preview": "vite preview",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "lint": "eslint ."
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.15.14",
+    "@mui/material": "5.15.14",
+    "axios": "1.6.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-player": "2.15.1",
+    "react-router-dom": "6.22.3",
+    "vite": "5.2.6"
   },
   "devDependencies": {
-    "cypress": "^12.4.1"
+    "cypress": "12.4.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "3.2.5"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true
   }
 }
